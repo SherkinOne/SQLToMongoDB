@@ -62,7 +62,7 @@ def db_migrate():
         if mongodb_database =="" : 
             mongodb_database= mysqldb_database
         
-        mongodb_client_db = mongodb_client[mysqldb_database]
+        mongodb_client_db = mongodb_client[mongodb_database]
 
         print("MongoDB database connected")
     except : 
